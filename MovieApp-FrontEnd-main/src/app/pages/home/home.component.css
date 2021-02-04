@@ -1,0 +1,114 @@
+.component {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: var(--primaryFont);
+  color: var(--theBlackColor);
+  background-color: black
+}
+
+/* 
+    HEADING SECTION
+*/
+.heading-container {
+  position: relative;
+}
+
+.heading-background-image {
+  display: block;
+  margin: 0;
+  width: 100%;
+  max-height: 450px;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.search-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  font-family: var(--secondaryFont);
+}
+
+.search-input,
+.search-button {
+  height: 60px;
+  border-radius: 32px;
+  font-size: 18px;
+  outline: none;
+}
+
+.search-input {
+  box-sizing: border-box;
+  background-color: white;
+  width: 100%;
+  /* right padding must match search-button width */
+  padding: 0 120px 0 20px;
+  border: white;
+}
+
+.search-button {
+  position: absolute;
+  right: 0;
+  /* width must match search-button right padding */
+  width: 120px;
+  /* background-color: var(--primaryColor); */
+  border: none;
+  cursor: pointer;
+  background-color: #d8d8d8;
+}
+
+.search-button:hover {
+  background-image: linear-gradient(#d8d8d8, #e6d1a4);
+}
+
+.jumbotron {
+  font-family: var(--secondaryFont);
+  color: black;
+  background-color: black;
+  -webkit-text-stroke: 1px var(--primaryGoldColor);
+  text-shadow: 0px 0px 15px var(--secondaryGoldColor);
+}
+
+#randomButton {
+  -webkit-text-stroke: 1px black;
+  letter-spacing: 3px;
+  background-color: var(--primaryGoldColor);
+  border: 1px solid black;
+}
+
+/* 
+    MOVIES SECTION
+*/
+.movies-container {
+  background-color: #FFF8EC;
+}
+
+.carousel-heading {
+  margin: 0;
+  padding: 20px 0 5px 10px;
+}
+
+.carousel-container {
+  height: fit-content;
+}
+
+@media screen and (max-width: 500px) {
+
+  .search-input,
+  .search-button {
+    height: 40px;
+    font-size: 16px;
+  }
+
+  .search-input {
+    /* right padding must match search-button width */
+    padding: 0 100px 0 20px;
+  }
+
+  .search-button {
+    /* width must match search-button right padding */
+    width: 100px;
+  }
+}

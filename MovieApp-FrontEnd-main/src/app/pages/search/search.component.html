@@ -1,0 +1,14 @@
+<div class="component">
+  <form (ngSubmit)="getMovies()" #searchForm="ngForm" class="search-container">
+    <span class="material-icons" id="search-icon">search</span>
+    <input [(ngModel)]='searchMovie' name='searchMovie' class="search-input" type="text"
+      placeholder="Search for a movie..." />
+  </form>
+  <mat-spinner class="spinner" *ngIf="isSearching"></mat-spinner>
+  <div *ngIf="!movies.length && !isSearching" class="no-movies">There are no movies that matched your search.</div>
+  <div *ngIf="movies" class="movies-container">
+    <div *ngFor="let movie of movies" class="movie-card">
+      <app-movie-search-card routerLink="/movieInfo/{{movie.id}}" [movie]="movie"></app-movie-search-card>
+    </div>
+  </div>
+</div>

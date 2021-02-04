@@ -1,0 +1,13 @@
+<div class="row" id="commentRow">
+  <div class=" container-fluid col-sm-8" id="comment">
+    <p><strong><a [routerLink]="['/profile', userName]">{{userName}}</a> : </strong>{{commentText}}</p>
+  </div>
+  <div *ngIf="editable">
+    <div class="container col-sm-4">
+      <!-- <button class="btn btn-primary" (click)="updateComment()" title="Update"><i class="fas fa-pen"></i></button> -->
+      <button class="btn btn-outline-danger" (click)="deleteComment()" title="Delete"><i class="fas fa-trash-alt"></i></button>
+    </div>
+
+  </div>
+
+</div>

@@ -1,0 +1,19 @@
+.movieItem {
+    display: inline;
+}
+
+img{
+    height: 225px;
+    width: 150px;
+    margin: 0 10px;
+    border-radius: 5px;
+    transform: scale(1);
+    transition: 300ms
+}
+
+img:hover{
+    transform: scale(1.1);
+    transition: 300ms;
+    position: relative;
+    z-index: 1;
+}

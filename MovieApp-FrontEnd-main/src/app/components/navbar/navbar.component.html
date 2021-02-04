@@ -1,0 +1,10 @@
+<nav>
+    <div class="navbar-container">
+        <span class="navbar-title">CineMatch</span>
+        <a routerLink="/home" *ngIf="loggedIn()" class="navbar-item">Home</a>
+        <a routerLink="/liked" *ngIf="loggedIn()" class="navbar-item">Liked</a>
+        <a routerLink="/watch" *ngIf="loggedIn()" class="navbar-item">Watch List</a>
+        <a routerLink="/login" *ngIf="!loggedIn()" class="navbar-item-right">Login</a>
+        <a [routerLink]="['/profile', username]" [username] = "username" *ngIf="loggedIn()" class="navbar-item-right" >Profile</a>
+    </div>
+</nav>

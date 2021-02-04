@@ -1,0 +1,7 @@
+.movieScroll {
+    background-color: #333;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+    padding: 20px 20px;
+}

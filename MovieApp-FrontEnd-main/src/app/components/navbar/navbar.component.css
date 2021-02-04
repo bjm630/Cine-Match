@@ -1,0 +1,27 @@
+.navbar-container{
+    background: var(--primaryGoldColor);
+    margin:auto; 
+    height:auto; 
+    overflow:auto;
+}
+
+.navbar-title{
+    float: left;
+    padding: 1%;
+    font-size: 20px;
+}
+
+.navbar-item{
+    float: left;
+    padding: 1%;
+    font-size: 20px;
+
+}
+
+.navbar-item-right{
+    float: right;
+    padding-right: 1%;
+    padding-top: 1%;
+    font-size: 20px;
+
+}

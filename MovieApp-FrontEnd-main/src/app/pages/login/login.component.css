@@ -1,0 +1,111 @@
+@keyframes glow {
+  from {
+    text-shadow: 0 0 5px #fff, 0 0 15px #fff, 0 0 25px var(--primaryGoldColor), 0 0 20px var(--primaryGoldColor), 0 0 20px var(--primaryGoldColor), 0 0 20px var(--primaryGoldColor), 0 0 20px var(--primaryGoldColor);
+  }
+
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px var(--primaryGoldColor), 0 0 40px var(--primaryGoldColor), 0 0 50px var(--primaryGoldColor), 0 0 60px var(--primaryGoldColor), 0 0 70px var(--primaryGoldColor), 0 0 80px var(--primaryGoldColor);
+  }
+
+}
+
+/**
+  ELEMENT DEFINITIONS
+*/
+
+input {
+  text-align: center;
+  color: white;
+  margin: 0 auto;
+  background-color: rgba(84, 80, 83, 0.0);
+  outline: 0;
+  border-width: 0 0 2px;
+  border-color: black;
+  width: 50%;
+}
+
+textarea:focus {
+  outline: none;
+}
+
+input:focus {
+  text-align: center;
+  color: white;
+  background-color: rgba(84, 80, 83);
+  box-shadow: 0 0 0 rgb(255, 255, 255);
+  border-width: 0 0 2px;
+  border-color: black;
+}
+
+form {
+
+  border: 2px solid black;
+  border-radius: 12px;
+  background-color: rgba(255, 255, 255, .3);
+  color: black;
+  max-width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+/**
+  ID DEFINITIONS
+*/
+
+#toRegisterButton {
+  margin-top: 10px;
+  max-width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#loginBack {
+  height: 100vh;
+  background-color: var(--secondaryRedColor);
+  background-image: url("../../../assets/images/theater.png");
+}
+
+#actualText {
+  text-shadow: 1px 1px 1px var(--primaryWhiteColor);
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+#formBack {
+
+  background-color: var(--theBlackColor);
+  padding-top: 50px;
+  padding-bottom: 25px;
+  border-radius: 12px;
+  opacity: 90%
+}
+
+#loginText {
+  margin-bottom: 50px;
+}
+
+#submitButton {
+  background-color: var(--primaryGoldColor);
+  border-radius: 12px;
+  width: 50%;
+}
+
+/**
+  CLASS DEFINITIONS
+*/
+
+.container {
+  font-family: var(--secondaryFont);
+}
+
+.buttonDiv {
+  display: flex;
+  justify-content: center;
+
+}
+
+.error-message {
+  color: red;
+}

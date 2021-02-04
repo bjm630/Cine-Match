@@ -1,0 +1,50 @@
+2021-01-28 12:16:15 DEBUG logging:28 - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+2021-01-28 12:16:15 INFO  Version:46 - HHH000412: Hibernate Core {5.4.10.Final}
+2021-01-28 12:16:16 INFO  Version:49 - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2021-01-28 12:16:17 INFO  Dialect:172 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2021-01-28 12:16:20 INFO  JtaPlatformInitiator:52 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-01-28 12:16:23 DEBUG UserController:24 - Entered in UserController.login(org.apache.catalina.connector.RequestFacade@596d3a7f, User [id=0, username=username2, password=password2, firstName=null, lastName=null])
+2021-01-28 12:16:23 DEBUG UserService:24 - Entered in UserService.login(username2, password2)
+2021-01-28 12:16:24 DEBUG UserRepoImp:24 - Entered in UserRepoImp.getUserByUsername(username2)
+2021-01-28 12:16:24 DEBUG UserRepoImp:29 - Exit from UserRepoImp.getUserByUsername(..); Execution time: 425 ms;
+2021-01-28 12:16:24 DEBUG UserService:29 - Exit from UserService.login(..); Execution time: 1096 ms;
+2021-01-28 12:16:24 DEBUG UserController:29 - Exit from UserController.login(..); Execution time: 1132 ms;
+2021-01-28 12:16:31 DEBUG ListsController:24 - Entered in ListsController.getListsByMovieID(org.apache.catalina.connector.RequestFacade@596d3a7f, 1)
+2021-01-28 12:16:31 DEBUG ListsService:24 - Entered in ListsService.getListsByMovieID(1)
+2021-01-28 12:16:32 DEBUG ListsRepoImp:24 - Entered in ListsRepoImp.getListsByMovieId(1)
+2021-01-28 12:16:32 DEBUG ListsRepoImp:29 - Exit from ListsRepoImp.getListsByMovieId(..); Execution time: 47 ms;
+2021-01-28 12:16:32 DEBUG ListsService:29 - Exit from ListsService.getListsByMovieID(..); Execution time: 436 ms;
+2021-01-28 12:16:32 DEBUG ListsController:29 - Exit from ListsController.getListsByMovieID(..); Execution time: 450 ms;
+2021-01-28 12:16:57 DEBUG ListsController:24 - Entered in ListsController.insertLike(org.apache.catalina.connector.RequestFacade@596d3a7f, 1, 238)
+2021-01-28 12:16:57 DEBUG ListsService:24 - Entered in ListsService.insertLike(1, 238)
+2021-01-28 12:16:58 DEBUG ListsRepoImp:24 - Entered in ListsRepoImp.getListByUserAndMovie(1, 238)
+2021-01-28 12:16:58 DEBUG ListsRepoImp:29 - Exit from ListsRepoImp.getListByUserAndMovie(..); Execution time: 43 ms;
+2021-01-28 12:16:58 DEBUG ListsRepoImp:24 - Entered in ListsRepoImp.updateLike(1, 238)
+2021-01-28 12:16:58 DEBUG ListsRepoImp:29 - Exit from ListsRepoImp.updateLike(..); Execution time: 65 ms;
+2021-01-28 12:16:58 DEBUG ListsService:29 - Exit from ListsService.insertLike(..); Execution time: 915 ms;
+2021-01-28 12:16:58 DEBUG ListsController:29 - Exit from ListsController.insertLike(..); Execution time: 916 ms;
+2021-01-28 12:19:52 DEBUG ListsController:24 - Entered in ListsController.getListsByUserID(org.apache.catalina.connector.RequestFacade@35a83e4d, 1)
+2021-01-28 12:19:52 DEBUG ListsService:24 - Entered in ListsService.getListsByUserID(1)
+2021-01-28 12:19:53 DEBUG ListsRepoImp:24 - Entered in ListsRepoImp.getListsByUserId(1)
+2021-01-28 12:19:53 DEBUG ListsRepoImp:29 - Exit from ListsRepoImp.getListsByUserId(..); Execution time: 44 ms;
+2021-01-28 12:19:53 DEBUG ListsService:29 - Exit from ListsService.getListsByUserID(..); Execution time: 463 ms;
+2021-01-28 12:19:53 DEBUG ListsController:29 - Exit from ListsController.getListsByUserID(..); Execution time: 464 ms;
+2021-01-29 18:35:34 DEBUG logging:28 - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+2021-01-29 18:35:34 INFO  Version:46 - HHH000412: Hibernate Core {5.4.10.Final}
+2021-01-29 18:35:35 INFO  Version:49 - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2021-01-29 18:35:36 INFO  Dialect:172 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2021-01-29 18:35:40 INFO  JtaPlatformInitiator:52 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-01-29 18:35:43 DEBUG UserController:24 - Entered in UserController.login(org.apache.catalina.connector.RequestFacade@328d36b1, User [id=0, username=username1, password=password1, firstName=null, lastName=null])
+2021-01-29 18:35:43 DEBUG UserService:24 - Entered in UserService.login(username1, password1)
+2021-01-29 18:35:44 DEBUG UserRepoImp:24 - Entered in UserRepoImp.getUserByUsername(username1)
+2021-01-29 18:35:44 DEBUG UserRepoImp:29 - Exit from UserRepoImp.getUserByUsername(..); Execution time: 422 ms;
+2021-01-29 18:35:44 DEBUG UserService:29 - Exit from UserService.login(..); Execution time: 1264 ms;
+2021-01-29 18:35:44 DEBUG UserController:29 - Exit from UserController.login(..); Execution time: 1302 ms;
+2021-01-29 18:36:01 DEBUG CommentController:24 - Entered in CommentController.updateComment(org.apache.catalina.connector.RequestFacade@328d36b1, 2, updated test)
+2021-01-29 18:36:01 DEBUG CommentService:24 - Entered in CommentService.updateComment(2, updated test, 6)
+2021-01-29 18:36:01 DEBUG CommentRepoImp:24 - Entered in CommentRepoImp.getCommentById(2)
+2021-01-29 18:36:01 DEBUG CommentRepoImp:29 - Exit from CommentRepoImp.getCommentById(..); Execution time: 131 ms;
+2021-01-29 18:36:02 DEBUG CommentRepoImp:24 - Entered in CommentRepoImp.updateComment(2, updated test)
+2021-01-29 18:36:02 DEBUG CommentRepoImp:29 - Exit from CommentRepoImp.updateComment(..); Execution time: 59 ms;
+2021-01-29 18:36:02 DEBUG CommentService:29 - Exit from CommentService.updateComment(..); Execution time: 1024 ms;
+2021-01-29 18:36:02 DEBUG CommentController:29 - Exit from CommentController.updateComment(..); Execution time: 1038 ms;

@@ -1,0 +1,52 @@
+<div class="container-fluid" id="mainContainer">
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-12" >
+
+  <header id="headerText">
+    <h1 class="display-1">Liked Movies</h1>
+  </header>
+  <hr>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 py-5" *ngFor="let movie of likedMovies">
+
+        <div class="card-custom-horizontal" id="wholeCard">
+
+          <div class="card-custom-img">
+            <app-movie-item class="cover" [imageUrl]="movie.image" [movieName]="movie.title" [id]="movie.id">
+            </app-movie-item>
+          </div>
+          <div class="card-custom-body" id="cardBody">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-md-4 info">
+                  <p><span class="title">Title:</span> {{movie.title}}</p>
+                  <p><span class="title">Release Date:</span> {{movie.releaseDate | date}}</p>
+                  <p><span class="title">Rating:</span> {{movie.rating}}</p>
+                </div>
+                <div class="col-md-8 ">
+                  <span class="title">Summary:</span>
+                  <div>
+                    {{movie.description}}
+                  </div>
+
+                </div>
+
+              </div>
+              <div class="row remove-button">
+                <button (click)="remove(movie)" class="btn btn-danger">Remove</button>
+              </div>
+            </div>
+
+          </div>
+
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+</div>

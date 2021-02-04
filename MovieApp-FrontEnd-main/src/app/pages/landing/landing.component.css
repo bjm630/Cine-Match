@@ -1,0 +1,143 @@
+@keyframes shake {
+  0% {
+    transform: translate(1px, 1px) rotate(0deg);
+  }
+
+  10% {
+    transform: translate(-1px, -2px) rotate(-1deg);
+  }
+
+  20% {
+    transform: translate(-3px, 0px) rotate(1deg);
+  }
+
+  30% {
+    transform: translate(3px, 2px) rotate(0deg);
+  }
+
+  40% {
+    transform: translate(1px, -1px) rotate(1deg);
+  }
+
+  50% {
+    transform: translate(-1px, 2px) rotate(-1deg);
+  }
+
+  60% {
+    transform: translate(-3px, 1px) rotate(0deg);
+  }
+
+  70% {
+    transform: translate(3px, 1px) rotate(-1deg);
+  }
+
+  80% {
+    transform: translate(-1px, -1px) rotate(1deg);
+  }
+
+  90% {
+    transform: translate(1px, 2px) rotate(0deg);
+  }
+
+  100% {
+    transform: translate(1px, -2px) rotate(-1deg);
+  }
+}
+
+/**
+  CLASS DEFINITIONS
+*/
+
+.component {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: var(--primaryFont);
+  color: var(--theBlackColor);
+  background-color: black;
+}
+
+/* 
+    HEADING SECTION
+*/
+.heading-container {
+  position: relative;
+  text-align: center;
+  color: var(--primaryGoldColor);
+  font-size: 36px;
+}
+
+.heading-centered {
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.heading-background-image {
+  display: block;
+  margin: 0;
+  width: 100%;
+  max-height: 350px;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.box-row {
+  display: flex;
+  justify-content: space-around;
+
+}
+
+.box {
+  float: left;
+  background-color: rgb(167, 164, 164);
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  width: 300px;
+  height: 200px;
+}
+
+.centered {
+  position: absolute;
+  left: 45%;
+}
+
+.card {
+
+  min-height: 275px;
+  text-align: center;
+  box-shadow: 0px 0px 10px white;
+}
+
+.material-icons {
+  font-size: 80px;
+}
+
+.card:hover {
+  animation: shake 0.5s;
+  animation-iteration-count: infinite;
+  min-height: 275px;
+  text-align: center;
+}
+
+/**
+  ID DEFINITIONS
+*/
+
+#welcomeText {
+  text-shadow: 0px 0px 10px black;
+}
+
+#cardcontainer {
+
+  background-color: black
+}
+
+#entryButton {
+  background-color: var(--primaryGoldColor);
+  border: 2px black;
+}
+
+#worksText {
+  font-family: var(--secondaryFont);
+  color: var(--primaryGoldColor)
+}

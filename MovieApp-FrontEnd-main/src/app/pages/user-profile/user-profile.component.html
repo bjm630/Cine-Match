@@ -1,0 +1,46 @@
+<div *ngIf='user' class="component">
+  <div class="row">
+    <div class="col-3"></div>
+    <div class="col-6">
+      <div class="all-user-info">
+        <div class="card">
+          <div class="card-heading">
+            <p class="heading">User Info</p>
+          </div>
+          <div class="card-body">
+            <div class="user-info-container">
+              <p class="user-header">Username:</p>
+              <p class="user-info">{{user.username}}</p>
+            </div>
+            <div class="user-info-container" *ngIf="currentUserProfile">
+              <p class="user-header">First Name:</p>
+              <p class="user-info">{{user.firstName}}</p>
+            </div>
+            <div class="user-info-container" *ngIf="currentUserProfile">
+              <p class="user-header">Last Name:</p>
+              <p class="user-info">{{user.lastName}}</p>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+      <div class="liked-movies-container">
+        <p class="heading" id="moviesHeading">Liked Movies</p>
+        <div class="liked-movies">
+          <div class="movie-container" *ngFor="let movie of likedMovies">
+            <img class="movie-image" routerLink="/movieInfo/{{movie.id}}" [src]="movie.image" [alt]="movie.title">
+          </div>
+        </div>
+        <a class="view-more" routerLink="/liked">View More of Your Liked Movies</a>
+      </div>
+    </div>
+    <div class="col-3">
+      <button class="btn btn-outline-danger btn-block mt-5" (click)="logout()" routerLink="">Logout</button>
+    </div>
+  </div>
+
+
+
+
+</div>

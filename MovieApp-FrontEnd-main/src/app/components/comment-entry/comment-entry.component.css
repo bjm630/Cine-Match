@@ -1,0 +1,13 @@
+a {
+  color: var(--primaryGoldColor);
+}
+
+#comment {
+  color: black;
+  margin-bottom: 10px;
+  background-color: var(--primaryWhiteColor);
+  border: 1px solid black;
+  border-radius: 15px;
+  overflow-wrap: break-word;
+  box-shadow: 0px 0px 7px white;
+}

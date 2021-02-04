@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jura:wght@300&display=swap');
+@import '@angular/material/prebuilt-themes/deeppurple-amber.css';
+:root {
+  --primaryFont: 'Roboto', sans-serif;
+  --secondaryFont: 'Pacifico', cursive;
+  --thirdFont: 'Jura', sans-serif;
+  /* --thirdFont:  */
+  --theBlackColor: #0A0408;
+  --primaryGoldColor: #C39F29;
+  --secondaryGoldColor: #9A7E20;
+  --primaryRedColor: #480612;
+  --secondaryRedColor: #230308;
+  --thirdRedColor: #870A22;
+  --primaryBrownColor: #2F1D11;
+  --secondaryBrownColor: #5f4938;
+  --thirdBrownColor: #937A52;
+  --primaryWhiteColor: #ffffff;
+}
+
+body {
+  margin: 0;
+}

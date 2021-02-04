@@ -1,0 +1,6 @@
+<div class="scroll-container">
+    <h1 *ngIf="listName.length">{{listName}}</h1>
+    <div class="movieScroll">
+        <app-movie-item *ngFor="let movie of movieArray" [id]="movie.id" [imageUrl]="movie.image" [movieName]="movie.title"></app-movie-item>
+    </div>
+</div>

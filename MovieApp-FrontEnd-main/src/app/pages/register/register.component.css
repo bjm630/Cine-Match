@@ -1,0 +1,118 @@
+@keyframes shadows {
+  0% {
+    text-shadow: 1px 1px 1px var(--primaryWhiteColor);
+  }
+
+  25% {
+    text-shadow: 2px 2px 2px var(--primaryWhiteColor);
+  }
+
+  50% {
+    text-shadow: 3px 3px 4px var(--primaryWhiteColor);
+  }
+
+  75% {
+    text-shadow: 4px 4px 5px var(--primaryWhiteColor);
+  }
+
+  100% {
+    text-shadow: 5px 5px 6px var(--primaryWhiteColor);
+  }
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 5px #fff, 0 0 15px #fff, 0 0 25px var(--primaryGoldColor), 0 0 20px var(--primaryGoldColor), 0 0 20px var(--primaryGoldColor), 0 0 20px var(--primaryGoldColor), 0 0 20px var(--primaryGoldColor);
+  }
+
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px var(--primaryGoldColor), 0 0 40px var(--primaryGoldColor), 0 0 50px var(--primaryGoldColor), 0 0 60px var(--primaryGoldColor), 0 0 70px var(--primaryGoldColor), 0 0 80px var(--primaryGoldColor);
+  }
+}
+
+
+
+/**
+  ID DEFINITIONS
+*/
+
+#backToLoginButton {
+  margin-top: 10px;
+}
+
+#registerBack {
+  height: 100vh;
+  background-color: var(--secondaryRedColor);
+}
+
+#actualText {
+  text-shadow: 1px 1px 1px var(--primaryWhiteColor);
+  /**
+  animation-name: shadows;
+  animation-duration: 4s;
+  animation-iteration-count: 5;
+  */
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+#formBack {
+  padding-top: 10px;
+  height: 95vh;
+  background-color: var(--theBlackColor);
+  background-image: url("../../../assets/images/theater.png");
+  border-radius: 12px;
+
+}
+
+#registerText {
+  margin-bottom: 40px;
+}
+
+#submitButton {
+  background-color: var(--primaryGoldColor);
+  border-radius: 12px;
+  width: 50%;
+}
+
+/**
+  ELEMENT DEFINITIONS
+*/
+input {
+  background-color: rgba(84, 80, 83, 0.0);
+  outline: 0;
+  border-width: 0 0 2px;
+  border-color: black;
+  text-align: center;
+  color: white;
+}
+
+input:focus {
+  text-align: center;
+  color: white;
+  background-color: rgba(76, 76, 76);
+  box-shadow: 0 0 0 rgb(255, 255, 255);
+  border-width: 0 0 2px;
+  border-color: black;
+}
+
+form {
+  border: 2px solid black;
+  border-radius: 12px;
+  background-color: rgba(255, 255, 255, .3);
+  color: black;
+}
+
+/**
+  CLASS DEFINITIONS
+*/
+.container {
+  font-family: var(--secondaryFont);
+}
+
+.buttonDiv {
+  display: flex;
+  justify-content: center;
+
+}

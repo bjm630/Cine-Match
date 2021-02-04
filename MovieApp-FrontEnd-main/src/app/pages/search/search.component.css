@@ -1,0 +1,55 @@
+.component {
+  width: 100%;
+  box-sizing: border-box;
+  font-family: var(--primaryFont);
+}
+
+/* 
+    SEARCH 
+*/
+.search-container {
+  position: relative;
+}
+
+.search-container,
+.search-input {
+  width: 100%;
+}
+
+#search-icon {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+}
+
+.search-input {
+  font-family: var(--secondaryFont);
+  outline: none;
+  font-size: 14px;
+  padding: 5px 5px 5px 35px;
+  margin-bottom: 20px;
+}
+
+/* 
+    MOVIES 
+*/
+.no-movies {
+  text-align: center;
+  font-size: 18px;
+}
+
+.movies-container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.movie-card {
+  margin-bottom: 20px;
+}
+
+/* 
+    SPINNER 
+*/
+.spinner {
+  margin: 0 auto;
+}

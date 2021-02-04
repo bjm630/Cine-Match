@@ -1,0 +1,31 @@
+<div class="container-fluid register" id="loginBack">
+  <div class="container text-center" id="formBack">
+    <div class="container" id="loginText">
+      <h1 class="display-1" id="actualText">L O G I N</h1>
+    </div>
+
+    <form id="login-form" (ngSubmit)="onSubmit()" class="form justify-content-center">
+
+      <div class="form-group ">
+        <label for="username">U s e r n a me</label><br>
+        <input type="text" class="form-control" [(ngModel)]="username" name="username" id="username">
+      </div>
+      <div class="form-group">
+        <label for="password">P a s s w o r d</label><br>
+        <input type="password" class="form-control" [(ngModel)]="password" name="password" id="password">
+      </div>
+      <div><span class="error-message" *ngIf="errorMessage">{{errorMessage}}</span></div>
+      <div class="text-center">
+        <button type="submit" id="submitButton" class="btn btn-lg" *ngIf="!successful">Submit</button>
+        <button class="btn btn-lg" id="submitButton" *ngIf="successful">
+          <span class="spinner-border spinner-border-md" role=status></span>
+          Logging In..
+        </button>
+      </div>
+    </form>
+    <button type="button" id="toRegisterButton" class="btn btn-lg btn-block btn-outline-secondary"
+      routerLink='/register'>
+      Register New User
+    </button>
+  </div>
+</div>
